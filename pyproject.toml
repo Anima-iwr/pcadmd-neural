@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pcadmd-neural"
+version = "0.1.0"
+description = "PCA-DMD tools for long-horizon neural signal reconstruction."
+authors = [
+    {name = "Anima Kujur"}
+]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "scikit-learn",
+    "matplotlib"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
